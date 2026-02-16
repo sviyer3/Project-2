@@ -52,3 +52,26 @@ footer {
     background-color: #1f3c88;
     color: white;
 }
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px 0 50px 0;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile-text h3 {
+    margin-top: 0;
+}
+
+.profile-text h4 {
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
