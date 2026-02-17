@@ -1,3 +1,4 @@
+/* Settings for overall body*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/*Header settings, adjusts color, padding, and text alignment */
 header {
     background-color: #1f3c88;
     color: white;
@@ -29,6 +31,7 @@ nav a {
     font-weight: bold;
 }
 
+/*Adds a text decoration when hovered over */
 nav a:hover {
     text-decoration: underline;
 }
@@ -39,6 +42,7 @@ nav a:hover {
     background-color: #e8ecf5;
 }
 
+/*Adds css to section setting of code */
 section {
     padding: 40px;
     margin: 20px;
@@ -46,6 +50,7 @@ section {
     border-radius: 8px;
 }
 
+/*Sets settings for footer section of code*/
 footer {
     text-align: center;
     padding: 15px;
