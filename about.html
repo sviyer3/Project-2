@@ -2,131 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Project 2 Team</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
 
-<header>
-    <h1>About Us</h1>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Main site navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resources.html">Implicit Bias Resource Guide</a></li>
-            <li><a href="tech-hero.html">Tech Hero</a></li>
-        </ul>
-    </nav>
+<header>
+    <div class="header-inner">
+		<h1>Project 2: LIS 500</h1>
+	
+		<!-- Consistent navigation for usability -->
+		<nav aria-label="Main navigation">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" aria-current="page">About Us</a></li>
+				<li><a href="tech-hero.html">Tech Heroes</a></li>
+				<li><a href="resources.html">Implicit Bias Resource Guide</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
-<section>
+<main id="main">
 
-    <!-- Page intro -->
-    <h2>Meet Our Team</h2>
-    <!-- This page introduces our team members and why we are interested in this course -->
-    <!-- Each profile includes "Who I Am", "My Academic Interests", and "My Goals" -->
-    <!-- Images are stored in the /images folder -->
-    <!-- All styling is handled through the external stylesheet.css -->
+	<section class="about-hero" aria-label="About page intro">
+		<div class="about-hero-overlay"></div>
+		
+		<div class="about-hero-content">
+			<h2 class="about-title">About Us</h2>
+			<p class="about-subtitle">
+				Meet the team behind this website: Shrinath Iyer, Jassi Chahal, and Yilin Gao.
+			</p>
+		</div>
+	</section>
+	
+	<section class="about-wrap">
+		<h2 class="about-section-title">Meet Our Team</h2>
+		
+		<div class="team-grid">
+		
+		<!--Shrinath profile -->
+		<article class="team-card">
+			<div class="profile">
+			<!-- Team member photo -->
+				<img src="images/iyer.jpg" alt="Photo of Shrinath Iyer">
+				
+				<div class="profile-text">
+					<h3>Shrinath Iyer</h3>
+					
+					<h4>Who I Am</h4>
+                    <p>
+                       Hey everyone, my name is Shrinath Iyer and I am a senior attending UW-Madison. I am currently pursuing information sciences and enjoy learning about different facets of information sciences.
+                    </p>
 
-    <!-- Profile 1: Shrinath Iyer -->
-    <div class="profile">
-        <!-- Team member photo -->
-        <img src="images/iyer.jpg" alt="Photo of Shrinath Iyer">
+                     <h4>My Academic Interests</h4>
+                     <p>
+                       I am particularly interested in how artificial intelligence works and it's ability to shape the future.
+                     </p>
 
-        <div class="profile-text">
-            <h3>Shrinath Iyer</h3>
+                    <h4>My Goals</h4>
+                    <p>
+                       I hope to learn more about intersectionality in tech and I am very excited to learn more about all of you as the semester goes on.
+                    </p>
+				</div>
+			</div>
+		</article>
+		
+		<!--Jassi profile -->
+		<article class="team-card">
+			<div class="profile">
+			<!-- Team member photo -->
+				<img src="images/jassi.jpg" alt="Photo of Jassi Chahal">
+				
+				<div class="profile-text">
+					<h3>Jassi Chahal</h3>
+					
+					<h4>Who I Am</h4>
+                    <p>
+                       Hi everyone, my name is Jassi. I am a senior studying Information Science. I was a Computer
+                       Science major before, so I have some experience in coding, especially front end.
+                    </p>
+					<p>
+					In my free time I love watching movies, playing video games, and hanging out with my cat Biscuit.
+					</p>
 
-            <!-- Who I Am -->
-            <h4>Who I Am</h4>
-            <p>
-                Hey everyone, my name is Shrinath Iyer and I am a senior attending UW-Madison. I am currently pursuing information sciences and enjoy learning about different facets of information sciences.
-            </p>
+                     <h4>My Academic Interests</h4>
+                     <p>
+                       I’m interested in how people interact with technology and how design choices can shape what
+                       users notice, trust, or misunderstand. I also like learning about front-end development and
+                       building interfaces that feel clear and easy to use.
+                     </p>
 
-            <!-- Academic Interests -->
-            <h4>My Academic Interests</h4>
-            <p>
-                I am particularly interested in how artificial intelligence works and it's ability to shape the future.
-            </p>
+                    <h4>My Goals</h4>
+                    <p>
+                      I’m excited to take this course because it connects areas I haven’t explored much before, and I
+                      want to better understand how technology and society affect each other.  
+                    </p>
+				</div>
+			</div>
+		</article>
+		
+		<!--Yilin profile -->
+		<article class="team-card">
+			<div class="profile">
+			<!-- Team member photo -->
+				<img src="images/yilin.jpg" alt="Photo of Yilin Gao">
+				
+				<div class="profile-text">
+					<h3>Yilin Gao</h3>
+					
+					<h4>Who I Am</h4>
+                    <p>
+                       Hi everyone. My name is Yilin Gao. I’m a senior majoring in Data Science. As someone who studies
+                       data and technology, I’m especially aware of how digital systems can shape the way people think,
+                       interact, and form opinions.
+                    </p>
 
-            <!-- Goals -->
-            <h4>My Goals</h4>
-            <p>
-                I hope to learn more about intersectionality in tech and I am very excited to learn more about all of you as the semester goes on.
-            </p>
-        </div>
-    </div>
+                     <h4>My Academic Interests</h4>
+                     <p>
+                       I’m interested in sports and video games, and I’m also curious about how data and technology shape
+                       what people experience online. I pay attention to how systems can influence what gets promoted,
+                       recommended, or treated as “normal.”
+                     </p>
 
-    <!-- Profile 2: Jassi Chahal -->
-    <div class="profile">
-        <!-- Team member photo -->
-        <img src="images/jassi.jpg" alt="Photo of Jassi Chahal">
-
-        <div class="profile-text">
-            <h3>Jassi Chahal</h3>
-
-            <!-- Who I Am -->
-            <h4>Who I Am</h4>
-            <p>
-                Hi everyone, my name is Jassi. I am a senior studying Information Science. I was a Computer
-                Science major before, so I have some experience in coding, especially front end.
-            </p>
-            <p>
-                In my free time I love watching movies, playing video games, and hanging out with my cat Biscuit.
-            </p>
-
-            <!-- Academic Interests -->
-            <h4>My Academic Interests</h4>
-            <p>
-                I’m interested in how people interact with technology and how design choices can shape what
-                users notice, trust, or misunderstand. I also like learning about front-end development and
-                building interfaces that feel clear and easy to use.
-            </p>
-
-            <!-- Goals -->
-            <h4>My Goals</h4>
-            <p>
-                I’m excited to take this course because it connects areas I haven’t explored much before, and I
-                want to better understand how technology and society affect each other.
-            </p>
-        </div>
-    </div>
-
-    <!-- Profile 3: Yilin Gao -->
-    <div class="profile">
-        <!-- Team member photo -->
-        <img src="images/yilin.jpg" alt="Photo of Yilin Gao">
-
-        <div class="profile-text">
-            <h3>Yilin Gao</h3>
-
-            <!-- Who I Am -->
-            <h4>Who I Am</h4>
-            <p>
-                Hi everyone. My name is Yilin Gao. I’m a senior majoring in Data Science. As someone who studies
-                data and technology, I’m especially aware of how digital systems can shape the way people think,
-                interact, and form opinions.
-            </p>
-
-            <!-- Academic Interests -->
-            <h4>My Academic Interests</h4>
-            <p>
-                I’m interested in sports and video games, and I’m also curious about how data and technology shape
-                what people experience online. I pay attention to how systems can influence what gets promoted,
-                recommended, or treated as “normal.”
-            </p>
-
-            <!-- Goals -->
-            <h4>My Goals</h4>
-            <p>
-                I took this class because I want to understand how technology connects with society, and how bias
-                can shape what people see as “normal” or “safe” in tech spaces.
-            </p>
-        </div>
-    </div>
-
+                    <h4>My Goals</h4>
+                    <p>
+                      I took this class because I want to understand how technology connects with society, and how bias
+                      can shape what people see as “normal” or “safe” in tech spaces.  
+                    </p>
+				</div>
+			</div>
+		</article>
+	</div>
 </section>
+
+</main>
+
 
 <footer>
     <p>Shrinath Iyer, Jassi Chahal, and Yilin Gao</p>

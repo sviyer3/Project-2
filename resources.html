@@ -9,63 +9,105 @@
 
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 <header>
-    <h1>Implicit Bias Resource Guide</h1>
-	<!-- Consistent navigation for usability -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="tech-hero.html">Tech Hero</a></li>
-			i><a href="resources.html">Resources</a></li>
-        </ul>
-    </nav>
+    <div class="header-inner">
+		<h1>Project 2: LIS 500</h1>
+	
+		<!-- Consistent navigation for usability -->
+		<nav aria-label="Main navigation">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="tech-hero.html">Tech Heroes</a></li>
+				<a href="resources.html" aria-current="page">Implicit Bias Resource Guide</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
-<!-- Using .hero class to match existing design for subject guide intro area-->
-<div class="hero">
-		<h2>Implicit Bias</h2>
-    <p>
-        This guide is designed for those who want a clear starting point regarding intersectionality and implicit bias. Explore for quick definitions and trusted links.
-    </p>
-	
-	<!-- Internal jump links to mimic a table of contents-->
-	<p>
-		Jump to:
-		<a href="#implicit">Implicit Bias</a>
-		<a href="#ibt">IBT</a>
-		<a href="#intersectionality">Intersectionality</a>
-		<a href="#resources">More Resources</a>
-	</p>
-</div>
+<main id="main">
 
-<!-- Search box-->
-<!--
-<section>
-    <h2>Search This Guide</h2>
-    <p>
-        Type a keyword to help find what you're looking for (example: "race", "gender").
-    </p>
+<!-- Top banner to match existing design for index theme-->
+	<section class="resources-hero" aria-label="Resources page intro">
+		<div class="resources-hero-overlay"></div>
+		
+		<div class="resources-hero-content">
+			<h2 class="resources-title">Implicit Bias Resource Guide</h2>
+			<p class="resources-subtitle">
+				Understanding bias, intersectionality, and how to take action.
+			</p>
+			<p class="resources-tagline">
+				A student friendly guide with quick defintions and trusted links.
+			</p>
+		</div>
+	</section>
 	
-	<!--Form to mimic library guide look--> 
-	<!--
-	<form action="#" method="get">
-		<label for="search">Enter Search Words:</label><br>
-		<input id="search" name="search" type="text" placeholder="Enter Search Words" style="padding:10px; width:70%; max-width:420px;">
-		<button type="submit" style="padding:10px;">Search</button>
-	</form>
-</section> -->
+<!-- Layout for sidebar + main content -->
+	<div class="resources-layout">
+	
+	<!-- sidebar -->
+	<aside class="resources-sidebar" aria-label="On this page">
+		<h3>On This Page</h3>
+		<ul class="sidebar-links">
+			<li><a href="#implicit">What is Implicit Bias?</a></li>
+			<li><a href="#intersectionality">Intersectionality</a></li>
+			<li><a href="#ibt">The IBT (Tests)</a></li>
+			<li><a href="#why">Why It Matters</a></li>
+			<li><a href="#resources">Additional Resources</a></li>
+		</ul>
+	</aside>
+	
+<!-- Main content -->
+	<section class="resources-content">
+	
+	<!-- Top topic cards -->
+		<div class="topic-cards" aria-label="Key topics">
+			<a class="topic-card topic-card--blue" href="#implicit">
+				<h3>What is Implicit Bias?</h3>
+				<p>Unconscious attitudes that can influence decisions and behavior.</p>
+				<span class="topic-cta">Learn more →</span>
+			</a>
+			
+			<a class="topic-card topic-card--orange" href="#intersectionality">
+				<h3>Intersectionality</h3>
+				<p>How overlapping identities shape experiences and outcomes.</p>
+				<span class="topic-cta">Explore →</span>
+			</a>	
+			
+			<a class="topic-card topic-card--green" href="#ibt">
+				<h3>The IBT (Implicit Bias Test)</h3>
+				<p>A reflection tool (Harvard Project Implicit) to explore automatic associations.</p>
+				<span class="topic-cta">Take a test →</span>
+			</a>
+		</div>
+
+<!--Why it matters -->
+	<section id="why" class="why-matters">
+		<h2>Why It Matters</h2>
+		<ul class="why-list">
+			<li><strong>Affects Technology & AI:</strong> Bias can shape design, data, and outcomes.</li>
+			<li><strong>Impacts Society & Justice:</strong> Bias influences decisions in education, hiring, and healthcare.</li>
+			<li><strong>Steps Toward Change:</strong> Recognizing bias is the first step to improving choices.</li>
+		</ul>
+
+		<div class="quote-card" role="note" aria-label="Key quote">
+          <p><strong>Bias is a part of being human —</strong> but recognizing it is the first step to change.</p>
+        </div>
+      </section>
+
 
 	<!-- Implicit Bias section-->
 
-<section id="implicit">
+<section id="implicit" class="resource-section">
 	<h2>What is Implicit Bias?</h2>
 	<p>
 		<strong>Implicit Bias</strong> refers to unconscious attidue or stereotypes that affect our understanding, actions, and decisions. 
 		These biases operate automatically and can influence behavior even when we consciously reject prejudice.
 	</p>
 	
-	<img src="images/implicit-bias-brain.jpg" alt="Illustration of a brain showing quick associations" style="max-width:600px; border-radius:8px;">
+	<img class="resource-img" src="images/implicit-bias-brain.jpg" alt="Illustration of a brain showing quick associations">
 	
 	<h3>Trusted Links</h3>
 	<ul>
@@ -83,7 +125,7 @@
 </section>
 
 	<!-- IBT section -->
-<section id="ibt">
+<section id="ibt" class="resouce-section">
 	<h2>What is the IBT?</h2>
 	<p>
 		The <strong>Implicit Bias Test (IBT)</strong> measures automatic associations between concepts (like race or gender) and evaluations (good/bad).
@@ -94,7 +136,7 @@
 		<strong>Important:</strong> The IBT is not a "good person vs. bad person" score. It is better used as a reflection tool.
 	</p>
 	
-	<img src="images/iat-example.jpg" alt="Example of a timed sorting test interface" style="max-width:600px; border-radius:8px;">
+	<img class="resource-img" src="images/iat-example.jpg" alt="Example of a timed sorting test interface">
 
 	<h3>Try the IBT + learn more</h3>
 	<ul>
@@ -118,9 +160,7 @@
 		experiences of privilege and oppression. It helps explain why one single category doesn't always capture someone's full experience.
 	</p>
 	
-	
-	
-	<img src="images/intersectionality-venn.jpg" alt="Venn diagram showing overlapping identities" style="max-width:600px; border-radius:8px;">
+	<img class="resource-img" src="images/intersectionality-venn.jpg" alt="Venn diagram showing overlapping identities">
 
 	<h3>Trusted Links</h3>
 	<ul>
@@ -137,7 +177,7 @@
 	</ul>
 </section>
 
-<section id="resources">
+<section id="resources" class="resource-section">
 	<h2>Additional Resources</h2>
 	<p>
 		These sources are credible options for papers, projects, and discussion posts.
@@ -162,6 +202,10 @@
 		</li>
 	</ul>
 </section>
+
+		</section>
+	</div>
+</main>
 
 <footer>
     <p>Shrinath Iyer, Jassi Chahal, and Yilin Ga</p>

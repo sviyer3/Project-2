@@ -9,7 +9,9 @@
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
-    <title>Welcome | Shrinath Iyer, Jassi Chahal, and Yilin Gao</title>
+	
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -17,22 +19,83 @@
 
 <header>
     <!-- Navigation links -->
-    <h1>Project 2: LIS 500</h1>
-    <nav>
-        <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resources.html">Implicit Bias Resource Guide</a></li>
-            <li><a href="tech-hero.html">Tech Hero</a></li>
-        </ul>
-    </nav>
+	<div class="header-inner">
+		<h1>Project 2: LIS 500</h1>
+		<nav aria-label="Main navigation">
+			<ul class="nav-links">
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="resources.html">Implicit Bias Resource Guide</a></li>
+				<li><a href="tech-hero.html">Tech Heroes</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
-<section class="hero">
-    <!-- Description Section -->
-    <h2>Exploring Technology, Equity, and Identity</h2>
-    <p>This site shares who we are, what we value, and how technology intersects with equity and social justice.</p>
+<main id="main">
 
+<!-- Banner -->
+<section class="hero hero--image" aria-label="Introduction">
+	<div class="hero-overlay"></div>
+	
+	<div class="hero-content">
+		<p class="eyebrow">Technology • Equity • Identity</p>
+		
+		<h2>Exploring how design choices shape what people experience online.</h2>
+		
+		<p class="hero-lede">
+			This site introduces our team, shares a guide to implicit bias and intersectionality, 
+			and highlights tech heroes who use innovation to improve lives.
+		</p>
+		
+		<div class="button-row">
+			<a class="btn btn-primary" href="resources.html">Start with the Resource Guide</a>
+			<a class="btn btn-secondary" href="about.html">Learn More About Us!</a>
+		</div>
+	</div>
 </section>
+
+<!-- Quick Navigation Cards -->
+<section class="section">
+	<h3 class="section-title">What you'll find here</h3>
+	
+	<div class="card-grid">
+            <article class="card">
+				<h4>About Us</h4>
+				<p>Short bios, academic interests, and why we care about technology and our society.</p>
+				<a class="card-link" href="about.html">Go to About Us →</a>
+			</article>
+			
+			<article class="card">
+				<h4>Implicit Bias Resource Guide</h4>
+				<p>Definitions, credible links, and quick starting points for learning more.</p>
+				<a class="card-link" href="resources.html">Go to Resources →</a>
+			</article>
+			
+			<article class="card">
+				<h4>Tech Heroes</h4>
+				<p>Spotlights on people whose technology supports communities and equity.</p>
+				<a class="card-link" href="tech-hero.html">Go to Tech Heroes →</a>
+			</article>
+		</div>
+	</section>
+	
+	<section class="section section--accent">
+		<div class="two-col">
+			<div>
+				<h3 class="section-title">Why This Project Matters</h3>
+				<p>
+				Technology isn't neutral: design decisions can amplify stereotypes, hide certain voices,
+                or make systems feel “normal” for some people and unsafe for others. This project connects
+                course ideas about intersectionality and implicit bias to real online experiences.
+				</p>
+			</div>
+			
+			<div class="pull-quote" role="note" aria-label="Key idea">
+				<p>"Small design choices can produce big outcomes, especially at scale."</p>
+			</div>
+		</div>
+	</section>
+</main>
 
 <footer>
     <!-- Footer section -->
